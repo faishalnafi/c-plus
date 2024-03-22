@@ -1,7 +1,11 @@
+//Program Tiket Kereta
+//Created By FaishalNafi'
+//HakCipta 2019-2024
 #include <iostream>
 #include <string>
 using namespace std;
 
+//Menu Display
 void kelasKereta() {
     cout << "Pilih kelas kereta:\n";
     cout << "1. Ekonomi (S) Rp. 200.000\n";
@@ -14,6 +18,7 @@ void kelasKereta() {
     cout << "8. Eksekutif (AB) Rp. 580.000\n";
 }
 
+//Kalkulasi
 void menghitungHarga(int kelas, int jumlah) {
     int harga[] = {200000, 220000, 250000, 290000, 310000, 350000, 490000, 580000};
     if (kelas>=1 && kelas<=8)
@@ -25,6 +30,7 @@ void menghitungHarga(int kelas, int jumlah) {
     }
 }
 
+//Program Utama
 int main() {
     int kelas, jumlah;
 

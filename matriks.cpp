@@ -51,6 +51,6 @@ int main() {
     }
 
     /*Menghitung xyz dengan subsitusi balik*/
-    
+    x[n] = a[n][n+1]
     return 0;
 }

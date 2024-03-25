@@ -27,14 +27,30 @@ int main() {
 
     /*Input value matriks*/
     cout << "Masukkan nilai angka tiap elemen matriks: \n";
-    for (i = 1; i <= n; i++)
-    {
-        for (j = 1; j <= n+1; j++)
-        {
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= n+1; j++) {
             cout << "a[" << i << "][" << j <<"]= ";
             cin >> a[i][j];
         }
     }
+
+    /*Operasi Gaus Gasus*/
+    for (i = 1; i <= n+1; i++) {
+        if (a[i][i] == 0.0) {
+            cout << "Perhitungan Matematis Matriks Error !!";
+            cout << "Cek Angka yang dimasukkan !!!";
+            exit(0);
+        }
+
+        for (j = i+1; i <= n; j++) {
+            ratio = a[j][i]/a[i][i];
+            for (k=1; k<=n; k++) {
+                a[j][k] = a[j][k] - ratio*a[i][k];
+            }
+        }
+    }
+
+    /*Menghitung xyz dengan subsitusi balik*/
     
     return 0;
 }

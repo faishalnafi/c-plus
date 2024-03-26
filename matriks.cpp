@@ -51,6 +51,14 @@ int main() {
     }
 
     /*Menghitung xyz dengan subsitusi balik*/
-    x[n] = a[n][n+1]
+    x[n] = a[n][n+1]/a[n][n];
+    for (i = n-1; i >= 1; i--) {
+        x[i] = a[i][n+1];
+        for (j = i+1; j <= n; j++) {
+            x[i] = x[i]-x[i][j]*x[j];
+        }
+        x[i] = x[i]/a[i][i];
+    }
+    
     return 0;
 }

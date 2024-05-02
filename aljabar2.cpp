@@ -25,13 +25,18 @@ int main () {
     cout << "Tampilkan elemen Matriks A" << endl;
     for (i=1;i<=n;i++) {
         for (j=1;j<=n;j++) {
-            cout << a[i][j] << "\t ";}
+            cout << a[i][j] << "\t ";
+        }
         cout << endl;
     }
-    cout << "Tampilkan elemen Matriks B" << endl;for (i=1;i<=n;i++)
-    {for (j=1;j<=n;j++) {
-    cout << b[i][j] << "\t ";}
-    cout << endl;}
+    cout << "Tampilkan elemen Matriks B" << endl;
+    
+    for (i=1;i<=n;i++){
+        for (j=1;j<=n;j++) {
+            cout << b[i][j] << "\t ";
+        }
+        cout << endl;
+    }
 
     // Penjumlahan Matriks
     cout << "Tampilkan elemen Matriks A+B" << endl;

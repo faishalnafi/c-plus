@@ -14,18 +14,20 @@ int main () {
     //Input Matriks
     cout << "Masukkan Ukuran Matriks : ";cin >> n;
     cout << endl;
-    cout << "Masukkan elemen Matriks A" << endl; for (i=1;i<=n;i++)
-    for (j=1;j<=n;j++){
+    cout << "Masukkan elemen Matriks A" << endl;for (i=1;i<=n;i++)
+    for (j=1;j<=n;j++) {
     cout << "a[" << i << "][" << j << "] : ";cin >> a[i][j];
     }
     cout << "Masukkan elemen Matriks B" << endl;for (i=1;i<=n;i++)
-    for (j=1;j<=n;j++){
+    for (j=1;j<=n;j++) {
     cout << "b[" << i << "][" << j << "] : ";cin >> b[i][j];
     }
-    cout << "Tampilkan elemen Matriks A" << endl;for (i=1;i<=n;i++)
-    {for (j=1;j<=n;j++){
-    cout << a[i][j] << "\t ";}
-    cout << endl;}
+    cout << "Tampilkan elemen Matriks A" << endl;
+    for (i=1;i<=n;i++) {
+        for (j=1;j<=n;j++) {
+            cout << a[i][j] << "\t ";}
+        cout << endl;
+    }
     cout << "Tampilkan elemen Matriks B" << endl;for (i=1;i<=n;i++)
     {for (j=1;j<=n;j++) {
     cout << b[i][j] << "\t ";}
